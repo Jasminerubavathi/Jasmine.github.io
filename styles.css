@@ -18,15 +18,6 @@ header {
     color: #fff;
     padding: 10px 20px;
     margin-bottom: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-
-header.scrolled {
-    background-color: #555; /* Example of changing header background on scroll */
 }
 
 header h1 {
@@ -50,23 +41,13 @@ nav ul li a {
 main {
     background-color: #fff;
     padding: 20px;
-    margin-top: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
     margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 section h2 {
