@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    box-sizing: border-box;
 }
 
 /* Basic styling for body and main content */
@@ -21,7 +21,12 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensures header is above other content */
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #555; /* Example of changing header background on scroll */
 }
 
 header h1 {
@@ -45,7 +50,7 @@ nav ul li a {
 main {
     background-color: #fff;
     padding: 20px;
-    margin-top: 80px; /* Adjusted to make space for fixed header */
+    margin-top: 80px;
 }
 
 section {
@@ -54,6 +59,14 @@ section {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section h2 {
