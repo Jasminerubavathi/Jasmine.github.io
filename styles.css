@@ -1,31 +1,27 @@
-header h1 {
-    font-size: 1.5em;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-
-nav ul li {
-    display: block;
-    margin: 10px 0;
-}
-
-main {
-    padding: 10px;
-}
-
-section {
-    padding: 15px;
-}
-.x-main {
-    min-height: calc(100vh - 95px);
-    margin-bottom: 50px; /* Add this to make space for the footer */
-}
-
-footer {
-    background-color: #333;
+header {
+    background: #333;
     color: #fff;
+    padding: 1em 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed; /* Change from absolute to fixed */
-    bottom: 0;
-    width: 100%;
-    z-index: 9999; /* Add this to ensure it stays on top */
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
 }
