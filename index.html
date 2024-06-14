@@ -5,89 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasmine's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Jasmine's Portfolio</h1>
-        <nav>
-            <a href="#summary">Professional Summary</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Jasmine's Portfolio</h1>
+            <p>Aspiring Web Developer and Engineer</p>
+            <nav>
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <section id="summary">
-        <h2>Professional Summary</h2>
-        <p>A motivated individual seeking opportunities in web technology. Experienced in electronics and communication with skills in software development, network engineering, and data analysis.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, C</li>
-            <li>Git and GitHub</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <article>
-            <h3>Intern, Leo Forced LED Company</h3>
-            <p>June 2023 – July 2023</p>
-            <p>Pondicherry</p>
-            <p>During my internship at Leo Forced LED Lights in Pondicherry, I gained invaluable hands-on experience in the field of Electronics and Electrical Engineering...</p>
-        </article>
-        <article>
-            <h3>Intern, CodSoft</h3>
-            <p>February 2023 – March 2023</p>
-            <p>Completed a virtual internship at CodSoft, specializing in Python programming. Developed proficiency by creating programs including a calculator and URL shortener. Demonstrated competence in problem-solving and algorithm development acquired practical experience in software development methodologies.</p>
-        </article>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Engineering in Electronics and Communication Engineering</p>
-        <p>KCG College of Technology, 2021 – 2025</p>
-        <p>CGPA: 8.26</p>
-        <p>SSLC: 83% | HSC: 88.67</p>
-        <p>Brotherhood Matriculation Higher Secondary School | St. Antony's Matriculation Higher Secondary School</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Geo Tagging of Plantation in the Catchment Area of Hydro Project</h3>
-            <p>Built using Raspberry Pi (2023)</p>
-            <p>Description: This project uses Raspberry Pi to track and manage agriculture in a catchment area. It combines GPS data with images for geo-tagged data storage on the Raspberry Pi or cloud. A web-based map like Google Maps is then used to visualize the plantation.</p>
-        </article>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Udemy Certified Python Developer</li>
-            <li>Cisco Packet Tracer</li>
-            <li>Attended 2-day workshop on Web Development</li>
-            <li>Participated in hands-on project-based workshops in the PALStinkathon</li>
-        </ul>
-    </section>
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Singer</li>
-            <li>Video Editing</li>
-            <li>Volunteering with NGOs</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: jasminerubavathi@gmail.com</p>
-        <p>Phone: +91 6383067987</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jasmine-d-12066023b/">jasmine</a></p>
-        <p>GitHub: <a href="https://github.com/Jasminerubavathi">jasmine</a></p>
-    </section>
+    <main>
+        <section id="summary" class="content-section">
+            <h2>Professional Summary</h2>
+            <p>A motivated individual seeking opportunities in web technology. Experienced in electronics and communication with skills in software development, network engineering, and data analysis.</p>
+        </section>
+        <section id="skills" class="content-section">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <div class="skill">Python, Java, C</div>
+                <div class="skill">Git and GitHub</div>
+                <div class="skill">Web Development</div>
+            </div>
+        </section>
+        <section id="experience" class="content-section">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <article>
+                    <h3>Intern, Leo Forced LED Company</h3>
+                    <p>June 2023 – July 2023</p>
+                    <p>Pondicherry</p>
+                    <p>During my internship at Leo Forced LED Lights in Pondicherry, I gained invaluable hands-on experience in the field of Electronics and Electrical Engineering...</p>
+                </article>
+                <article>
+                    <h3>Intern, CodSoft</h3>
+                    <p>February 2023 – March 2023</p>
+                    <p>Completed a virtual internship at CodSoft, specializing in Python programming. Developed proficiency by creating programs including a calculator and URL shortener...</p>
+                </article>
+            </div>
+        </section>
+        <section id="education" class="content-section">
+            <h2>Education</h2>
+            <p>Bachelor of Engineering in Electronics and Communication Engineering</p>
+            <p>KCG College of Technology, 2021 – 2025</p>
+            <p>CGPA: 8.26</p>
+            <p>SSLC: 83% | HSC: 88.67</p>
+            <p>Brotherhood Matriculation Higher Secondary School | St. Antony's Matriculation Higher Secondary School</p>
+        </section>
+        <section id="projects" class="content-section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <article>
+                    <h3>Geo Tagging of Plantation in the Catchment Area of Hydro Project</h3>
+                    <p>Built using Raspberry Pi (2023)</p>
+                    <p>This project uses Raspberry Pi to track and manage agriculture in a catchment area. It combines GPS data with images for geo-tagged data storage on the Raspberry Pi or cloud. A web-based map like Google Maps is then used to visualize the plantation.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>Email: jasminerubavathi@gmail.com</p>
+            <p>Phone: +91 6383067987</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jasmine-d-12066023b/" class="contact-link">jasmine</a></p>
+            <p>GitHub: <a href="https://github.com/Jasminerubavathi" class="contact-link">jasmine</a></p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Jasmine</p>
+        <p>&copy; 2024 Jasmine's Portfolio</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
