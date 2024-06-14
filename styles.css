@@ -1,27 +1,139 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
 }
-header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header#hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: url('anime-landscape-background-ucua6aw9zfbhxwmu.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: #fff;
 }
-nav a {
+
+.hero-content {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
 }
-section {
+
+header nav a:hover {
+    color: #ffce00;
+}
+
+/* Section Styles */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
 }
-footer {
+
+.content-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-section.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Specific Section Styles */
+.skill-container, .experience-container, .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill, .experience-container article, .projects-container article {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skill:hover, .experience-container article:hover, .projects-container article:hover {
+    transform: translateY(-10px);
+}
+
+.skill {
     text-align: center;
-    padding: 10px;
+    background: #6a11cb;
+    color: #fff;
+}
+
+.experience-container article h3, .projects-container article h3 {
+    margin-top: 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+}
+
+#contact .contact-link {
+    display: inline-block;
+    background-color: #6a11cb;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#contact .contact-link:hover {
+    background-color: #510ca8;
+}
+
+/* Footer Styles */
+footer {
     background: #333;
     color: #fff;
+    text-align: center;
+    padding: 10px;
 }
